@@ -1,0 +1,112 @@
+/* line 6, ../style.scss */
+body {
+  font-family: lato;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+/* line 11, ../style.scss */
+body .form {
+  width: 60%;
+  height: auto;
+  margin: 10px auto 0;
+  padding: 50px 20px;
+  -webkit-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* line 19, ../style.scss */
+body .form input {
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 1.4rem;
+  text-align: center;
+  -webkit-box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+/* line 33, ../style.scss */
+body .form input:focus {
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+/* line 39, ../style.scss */
+body .form button {
+  padding: 5px 20px;
+  background: transparent;
+  border: yellow 2px solid;
+  color: yellow;
+  font-size: 1.2rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+
+/* line 52, ../style.scss */
+body .form button:hover {
+  background: #e9e90f;
+  color: #f90000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: #f90000 2px solid;
+}
+
+/* line 65, ../style.scss */
+.invalid {
+  display: block;
+  height: auto;
+}
+
+/* line 70, ../style.scss */
+.info {
+  display: none;
+  padding: 5px 20px;
+  background: #ff00004d;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+}
+
+/* line 77, ../style.scss */
+.info p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* line 83, ../style.scss */
+#element {
+  margin: 30px auto 0;
+}
+
+/* line 86, ../style.scss */
+#element .special {
+  padding: 5px;
+  font-size: 6rem;
+  font-family: "Trebuchet MS";
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100 !important;
+}
+
+/* line 95, ../style.scss */
+#element .text {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
