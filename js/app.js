@@ -22,7 +22,7 @@ btn.addEventListener("click", function(event) {
                 .then(function(res) {
                     const response = res[inputValue - 1];
 
-                    if (inputValue > res.length) {
+                    if (inputValue > 118) {
                         showDiv('Element not Discovered yet', info_div);
                     } else {
                         element.innerHTML = `
