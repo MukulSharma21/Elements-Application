@@ -16,14 +16,13 @@ btn.addEventListener("click", function(event) {
         const inputValue = input.value;
 
         if (regx.test(inputValue)) {
-
             //fetch the data
             fetch('elements.json')
                 .then(data => data.json())
                 .then(function(res) {
                     const response = res[inputValue - 1];
 
-                    if (response > res.length) {
+                    if (inputValue > res.length) {
                         showDiv('Element not Discovered yet', info_div);
                     } else {
                         element.innerHTML = `
@@ -49,10 +48,8 @@ btn.addEventListener("click", function(event) {
                     </div>
                 </div>
             </div>
-        </div>
-                        `
+        </div>`
                     }
-
                 });
         } else {
             showDiv("Only numbers are allowed", info_div);
