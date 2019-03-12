@@ -3,7 +3,7 @@ const input = document.querySelector('#text');
 const btn = document.querySelector('#btn');
 const info_div = document.querySelector('.info');
 const element = document.querySelector('#element');
-
+const url = `https://github.com/neelpatel05/periodic-table-api/blob/master/home/neelpatel05/data.json`;
 
 btn.addEventListener("click", function(event) {
     // Prevent page reloading on click
@@ -21,7 +21,7 @@ btn.addEventListener("click", function(event) {
                 .then(data => data.json())
                 .then(function(res) {
                     const response = res[inputValue - 1];
-
+                    const wikiUrl = `https://en.wikipedia.org/wiki/`;
                     if (inputValue > 118) {
                         showDiv('Element not Discovered yet', info_div);
                     } else {
@@ -44,6 +44,8 @@ btn.addEventListener("click", function(event) {
                         <div class="symbol">
                             <h2 class="special text-success">${response.symbol}</h2>
                             <span class="lead text text-center text-danger">Year Discovered: ${response.yearDiscovered}</span>
+                            <br>
+                            <a href="${wikiUrl+response.name}" target="_blank" class="p-2">Get More Details</a>
                         </div>
                     </div>
                 </div>
